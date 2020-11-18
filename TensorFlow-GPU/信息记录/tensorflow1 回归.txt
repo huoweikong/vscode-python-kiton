@@ -1,0 +1,85 @@
+PS F:\vscode-python-kiton> & D:/ruanjian/anaconda202002/python.exe f:/vscode-python-kiton/TensorFlow-GPU/deeplearning-tensorflow-weichart/linearegression1.py
+2020-05-29 16:02:18.561400: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+WARNING:tensorflow:From C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\compat\v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2020-05-29 16:02:22.416768: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-05-29 16:02:22.444231: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-05-29 16:02:22.455708: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: KOTIN
+2020-05-29 16:02:22.460762: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: KOTIN
+2020-05-29 16:02:22.464785: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+epoch: 1 cost= 2.5843134 w= [-0.30497345] b= [0.68231636]
+epoch: 3 cost= 0.30997783 w= [1.4346793] b= [0.21437901]
+epoch: 5 cost= 0.11459823 w= [1.9062177] b= [0.03678818]
+epoch: 7 cost= 0.09889763 w= [2.0285084] b= [-0.01008373]
+epoch: 9 cost= 0.09720758 w= [2.0601351] b= [-0.02221943]
+epoch: 11 cost= 0.09692918 w= [2.068314] b= [-0.02535789]
+epoch: 13 cost= 0.096867844 w= [2.0704277] b= [-0.02616896]
+epoch: 15 cost= 0.09685271 w= [2.0709732] b= [-0.02637843]
+epoch: 17 cost= 0.09684882 w= [2.0711153] b= [-0.02643283]
+epoch: 19 cost= 0.09684781 w= [2.0711522] b= [-0.02644693]
+Finished!
+cost= 0.096847646 w= [2.0711586] b= [-0.02644958]
+
+2-------------
+epoch: 1 cost= 0.08552585 w= [2.0080054] b= [-0.0005923]
+epoch: 3 cost= 0.078590184 w= [2.1114435] b= [-0.0337082]
+epoch: 5 cost= 0.07834134 w= [2.1389055] b= [-0.04413605]
+epoch: 7 cost= 0.07839619 w= [2.1460187] b= [-0.04686379]
+epoch: 9 cost= 0.078418404 w= [2.147858] b= [-0.04756948]
+epoch: 11 cost= 0.07842468 w= [2.1483328] b= [-0.04775178]
+epoch: 13 cost= 0.07842635 w= [2.1484573] b= [-0.04779949]
+epoch: 15 cost= 0.078426786 w= [2.1484897] b= [-0.0478119]
+epoch: 17 cost= 0.07842691 w= [2.1484983] b= [-0.04781519]
+epoch: 19 cost= 0.078426935 w= [2.1485004] b= [-0.04781599]
+Finished!
+cost= 0.07842694 w= [2.1485007] b= [-0.04781606]
+3------------------------
+
+GPU
+
+PS F:\vscode-python-kiton> & D:/ruanjian/anaconda202002/python.exe f:/vscode-python-kiton/TensorFlow-GPU/deeplearning-tensorflow-weichart/linearegression1.py
+2020-05-29 16:04:54.551490: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+WARNING:tensorflow:From C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\compat\v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2020-05-29 16:04:57.715656: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-05-29 16:04:57.745224: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.755GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2020-05-29 16:04:57.760900: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 16:04:57.770265: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-05-29 16:04:57.839219: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-05-29 16:04:57.847344: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-05-29 16:04:57.863194: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-05-29 16:04:57.875747: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-05-29 16:04:57.897266: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-05-29 16:04:57.903141: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-05-29 16:04:57.907141: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2020-05-29 16:04:57.921512: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.755GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2020-05-29 16:04:57.933844: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 16:04:57.937748: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-05-29 16:04:57.941466: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-05-29 16:04:57.954969: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-05-29 16:04:57.958746: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-05-29 16:04:57.965582: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-05-29 16:04:57.969206: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-05-29 16:04:57.973444: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-05-29 16:04:58.462665: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-29 16:04:58.467051: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0
+2020-05-29 16:04:58.469103: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N
+2020-05-29 16:04:58.472858: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4604 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5)
+epoch: 1 cost= 0.6989133 w= [0.7910222] b= [0.33111027]
+epoch: 3 cost= 0.14167279 w= [1.6669322] b= [0.09390634]
+epoch: 5 cost= 0.09768411 w= [1.9041764] b= [0.00452982]
+epoch: 7 cost= 0.09512943 w= [1.9657013] b= [-0.01905208]
+epoch: 9 cost= 0.09506874 w= [1.9816129] b= [-0.02515764]
+epoch: 11 cost= 0.09509318 w= [1.9857267] b= [-0.0267363]
+epoch: 13 cost= 0.0951022 w= [1.986791] b= [-0.02714467]
+epoch: 15 cost= 0.09510472 w= [1.9870663] b= [-0.02725027]
+epoch: 17 cost= 0.09510537 w= [1.9871371] b= [-0.02727744]
+epoch: 19 cost= 0.095105544 w= [1.9871556] b= [-0.02728459]
+Finished!
+cost= 0.09510557 w= [1.9871589] b= [-0.02728582]

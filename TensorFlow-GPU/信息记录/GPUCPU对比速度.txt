@@ -1,0 +1,323 @@
+
+1500对比
+----------------------------------------
+GPU
+---------------------------------
+PS F:\vscode-python-kiton> & D:/ruanjian/anaconda202002/python.exe f:/vscode-python-kiton/数学/TensorFlow/ceshiGPUCPU.py gpu 1500
+2020-05-29 00:49:54.923688: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 00:49:56.373033: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2020-05-29 00:49:56.377595: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-05-29 00:49:56.401729: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.755GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2020-05-29 00:49:56.405714: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 00:49:56.413167: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-05-29 00:49:56.417749: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-05-29 00:49:56.420783: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-05-29 00:49:56.426214: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-05-29 00:49:56.430493: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-05-29 00:49:56.438189: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-05-29 00:49:56.440516: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-05-29 00:49:56.886279: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-29 00:49:56.888365: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0
+2020-05-29 00:49:56.889732: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N
+2020-05-29 00:49:56.891275: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4604 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5)
+Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5
+2020-05-29 00:49:56.895678: I tensorflow/core/common_runtime/direct_session.cc:358] Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5
+
+random_uniform/RandomUniform: (RandomUniform): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:49:56.899241: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/RandomUniform: (RandomUniform): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:49:56.901891: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:49:56.903841: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:49:56.905969: I tensorflow/core/common_runtime/placer.cc:54] random_uniform: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+transpose: (Transpose): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:49:56.907765: I tensorflow/core/common_runtime/placer.cc:54] transpose: (Transpose): /job:localhost/replica:0/task:0/device:GPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:49:56.909628: I tensorflow/core/common_runtime/placer.cc:54] MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:49:56.911600: I tensorflow/core/common_runtime/placer.cc:54] Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:49:56.913254: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/min: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:49:56.917141: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/min: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/max: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:49:56.919063: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/max: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+transpose/perm: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:49:56.920970: I tensorflow/core/common_runtime/placer.cc:54] transpose/perm: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:49:56.923428: I tensorflow/core/common_runtime/placer.cc:54] Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:49:56.928605: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+845378400.0
+
+
+
+
+
+
+Shape: (1500, 1500) Device: /gpu:0
+Time taken: 0:00:00.958767
+
+
+-------------------------------------------------
+
+CPU
+-------------------------------------
+PS F:\vscode-python-kiton> & D:/ruanjian/anaconda202002/python.exe f:/vscode-python-kiton/数学/TensorFlow/ceshiGPUCPU.py cpu 1500
+2020-05-29 00:51:12.451430: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 00:51:13.910367: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2020-05-29 00:51:13.915544: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-05-29 00:51:13.941336: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.755GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2020-05-29 00:51:13.944968: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 00:51:13.950804: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-05-29 00:51:13.955547: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-05-29 00:51:13.958383: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-05-29 00:51:13.963910: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-05-29 00:51:13.967986: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-05-29 00:51:13.977203: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-05-29 00:51:13.981557: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-05-29 00:51:14.423541: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-29 00:51:14.426239: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0
+2020-05-29 00:51:14.427859: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N
+2020-05-29 00:51:14.429855: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4604 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5)
+Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5
+2020-05-29 00:51:14.436235: I tensorflow/core/common_runtime/direct_session.cc:358] Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5
+
+random_uniform/RandomUniform: (RandomUniform): /job:localhost/replica:0/task:0/device:CPU:0
+2020-05-29 00:51:14.440129: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/RandomUniform: (RandomUniform): /job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/sub: (Sub): /job:localhost/replica:0/task:0/device:CPU:0
+2020-05-29 00:51:14.443917: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/sub: (Sub): /job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/mul: (Mul): /job:localhost/replica:0/task:0/device:CPU:0
+2020-05-29 00:51:14.445786: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/mul: (Mul): /job:localhost/replica:0/task:0/device:CPU:0
+random_uniform: (Add): /job:localhost/replica:0/task:0/device:CPU:0
+2020-05-29 00:51:14.447627: I tensorflow/core/common_runtime/placer.cc:54] random_uniform: (Add): /job:localhost/replica:0/task:0/device:CPU:0
+transpose: (Transpose): /job:localhost/replica:0/task:0/device:CPU:0
+2020-05-29 00:51:14.449522: I tensorflow/core/common_runtime/placer.cc:54] transpose: (Transpose): /job:localhost/replica:0/task:0/device:CPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:CPU:0
+2020-05-29 00:51:14.451898: I tensorflow/core/common_runtime/placer.cc:54] MatMul: (MatMul): /job:localhost/replica:0/task:0/device:CPU:0
+Sum: (Sum): /job:localhost/replica:0/task:0/device:CPU:0
+2020-05-29 00:51:14.453605: I tensorflow/core/common_runtime/placer.cc:54] Sum: (Sum): /job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/shape: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2020-05-29 00:51:14.455297: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/shape: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/min: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2020-05-29 00:51:14.457199: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/min: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/max: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2020-05-29 00:51:14.459334: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/max: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+transpose/perm: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2020-05-29 00:51:14.461804: I tensorflow/core/common_runtime/placer.cc:54] transpose/perm: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+Const: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2020-05-29 00:51:14.463640: I tensorflow/core/common_runtime/placer.cc:54] Const: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+844096100.0
+
+
+
+
+
+
+Shape: (1500, 1500) Device: /cpu:0
+Time taken: 0:00:00.601363
+
+
+
+******************************************************
+15000次比对
+*****************************
+------------------------------
+CPU
+---------------------------
+Shape: (15000, 15000) Device: /cpu:0
+Time taken: 0:00:13.458996
+----------------------
+GPU
+-----------------------
+Shape: (15000, 15000) Device: /gpu:0
+Time taken: 0:00:02.584088
+
+
+******************************************************
+20000次比对
+*****************************
+------------------------------
+GPU
+---------------------------
+1999980200000.0
+
+Shape: (20000, 20000) Device: /gpu:0
+Time taken: 0:00:05.113321
+----------------------
+CPU
+-----------------------
+
+2000095700000.0
+
+Shape: (20000, 20000) Device: /cpu:0
+Time taken: 0:00:32.852118
+
+
+******************************************************
+150000次比对
+*****************************
+报错  Resource exhausted
+--------------------------
+
+PS F:\vscode-python-kiton> & D:/ruanjian/anaconda202002/python.exe f:/vscode-python-kiton/数学/TensorFlow/ceshiGPUCPU.py gpu 150000
+2020-05-29 00:54:15.688315: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 00:54:17.157494: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2020-05-29 00:54:17.161027: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-05-29 00:54:17.181743: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.755GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2020-05-29 00:54:17.186913: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 00:54:17.192267: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-05-29 00:54:17.198098: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-05-29 00:54:17.201638: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-05-29 00:54:17.206734: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-05-29 00:54:17.210247: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-05-29 00:54:17.218829: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-05-29 00:54:17.223517: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-05-29 00:54:17.669291: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-29 00:54:17.671238: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0
+2020-05-29 00:54:17.672417: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N
+2020-05-29 00:54:17.673937: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4604 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5)
+Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5
+2020-05-29 00:54:17.678622: I tensorflow/core/common_runtime/direct_session.cc:358] Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5
+
+random_uniform/RandomUniform: (RandomUniform): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:54:17.682266: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/RandomUniform: (RandomUniform): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:54:17.684999: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:54:17.687406: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:54:17.689513: I tensorflow/core/common_runtime/placer.cc:54] random_uniform: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+transpose: (Transpose): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:54:17.694045: I tensorflow/core/common_runtime/placer.cc:54] transpose: (Transpose): /job:localhost/replica:0/task:0/device:GPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:54:17.696707: I tensorflow/core/common_runtime/placer.cc:54] MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:54:17.698823: I tensorflow/core/common_runtime/placer.cc:54] Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:54:17.700623: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/min: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:54:17.702574: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/min: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/max: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:54:17.705476: I tensorflow/core/common_runtime/placer.cc:54] random_uniform/max: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+transpose/perm: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:54:17.708378: I tensorflow/core/common_runtime/placer.cc:54] transpose/perm: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:54:17.710350: I tensorflow/core/common_runtime/placer.cc:54] Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:54:17.716159: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-05-29 00:54:28.132801: W tensorflow/core/common_runtime/bfc_allocator.cc:424] Allocator (GPU_0_bfc) ran out of memory trying to allocate 83.82GiB (rounded to 90000000000).  Current allocation summary follows.
+2020-05-29 00:54:28.135986: I tensorflow/core/common_runtime/bfc_allocator.cc:894] BFCAllocator dump for GPU_0_bfc
+2020-05-29 00:54:28.137509: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (256):   Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.140060: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (512):   Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.142983: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (1024):  Total Chunks: 1, Chunks in use: 1. 1.3KiB allocated for chunks. 1.3KiB in use in bin. 1.0KiB client-requested in use in bin.
+2020-05-29 00:54:28.145783: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (2048):  Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.148515: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (4096):  Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.151805: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (8192):  Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.154633: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (16384):         Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.157186: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (32768):         Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.160034: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (65536):         Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.163038: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (131072):        Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.167398: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (262144):        Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.170648: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (524288):        Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.173507: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (1048576):       Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.176078: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (2097152):       Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.178815: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (4194304):       Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.181375: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (8388608):       Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.183989: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (16777216):      Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.186831: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (33554432):      Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.189448: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (67108864):      Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.194551: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (134217728):     Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.197965: I tensorflow/core/common_runtime/bfc_allocator.cc:901] Bin (268435456):     Total Chunks: 1, Chunks in use: 0. 4.50GiB allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-05-29 00:54:28.201213: I tensorflow/core/common_runtime/bfc_allocator.cc:917] Bin for 83.82GiB was 256.00MiB, Chunk State:
+2020-05-29 00:54:28.203028: I tensorflow/core/common_runtime/bfc_allocator.cc:923]   Size: 4.50GiB | Requested Size: 0B | in_use: 0 | bin_num: 20, prev:   Size: 1.3KiB | Requested Size: 1.0KiB | in_use: 1 | bin_num: -1
+2020-05-29 00:54:28.206274: I tensorflow/core/common_runtime/bfc_allocator.cc:930] Next region of size 4828102656
+2020-05-29 00:54:28.207741: I tensorflow/core/common_runtime/bfc_allocator.cc:950] InUse at 70f600000 of size 1280 next 1
+2020-05-29 00:54:28.209233: I tensorflow/core/common_runtime/bfc_allocator.cc:950] Free  at 70f600500 of size 4828101376 next 18446744073709551615
+2020-05-29 00:54:28.211037: I tensorflow/core/common_runtime/bfc_allocator.cc:955]      Summary of in-use Chunks by size:
+2020-05-29 00:54:28.212557: I tensorflow/core/common_runtime/bfc_allocator.cc:958] 1 Chunks of size 1280 totalling 1.3KiB
+2020-05-29 00:54:28.214246: I tensorflow/core/common_runtime/bfc_allocator.cc:962] Sum Total of in-use chunks: 1.3KiB
+2020-05-29 00:54:28.216194: I tensorflow/core/common_runtime/bfc_allocator.cc:964] total_region_allocated_bytes_: 4828102656 memory_limit_: 4828102656 available bytes: 0 curr_region_allocation_bytes_: 9656205312
+2020-05-29 00:54:28.218891: I tensorflow/core/common_runtime/bfc_allocator.cc:970] Stats:
+Limit:                  4828102656
+InUse:                        1280
+MaxInUse:                     1280
+NumAllocs:                       1
+MaxAllocSize:                 1280
+
+2020-05-29 00:54:28.224748: W tensorflow/core/common_runtime/bfc_allocator.cc:429] *___________________________________________________________________________________________________
+2020-05-29 00:54:28.227001: W tensorflow/core/framework/op_kernel.cc:1655] OP_REQUIRES failed at random_op.cc:76 : Resource exhausted: OOM when allocating tensor with shape[150000,150000] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\client\session.py", line 1367, in _do_call
+    return fn(*args)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\client\session.py", line 1352, in _run_fn
+    target_list, run_metadata)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\client\session.py", line 1445, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: 2 root error(s) found.
+  (0) Resource exhausted: OOM when allocating tensor with shape[150000,150000] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+         [[{{node random_uniform/RandomUniform}}]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+  (1) Resource exhausted: OOM when allocating tensor with shape[150000,150000] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+         [[{{node random_uniform/RandomUniform}}]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+         [[Sum/_1]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "f:/vscode-python-kiton/数学/TensorFlow/ceshiGPUCPU.py", line 27, in <module>
+    result = session.run(sum_operation)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\client\session.py", line 960, in run
+    run_metadata_ptr)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\client\session.py", line 1183, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\client\session.py", line 1361, in _do_run
+    run_metadata)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\client\session.py", line 1386, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: 2 root error(s) found.
+  (0) Resource exhausted: OOM when allocating tensor with shape[150000,150000] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+         [[node random_uniform/RandomUniform (defined at f:/vscode-python-kiton/数学/TensorFlow/ceshiGPUCPU.py:21) ]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+  (1) Resource exhausted: OOM when allocating tensor with shape[150000,150000] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+         [[node random_uniform/RandomUniform (defined at f:/vscode-python-kiton/数学/TensorFlow/ceshiGPUCPU.py:21) ]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+         [[Sum/_1]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'random_uniform/RandomUniform':
+  File "f:/vscode-python-kiton/数学/TensorFlow/ceshiGPUCPU.py", line 21, in <module>
+    random_matrix = tf.compat.v1.random_uniform(shape=shape, minval=0, maxval=1)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\ops\random_ops.py", line 272, in random_uniform
+    rnd = gen_random_ops.random_uniform(shape, dtype, seed=seed1, seed2=seed2)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\ops\gen_random_ops.py", line 735, in random_uniform
+    name=name)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\framework\op_def_library.py", line 742, in _apply_op_helper
+    attrs=attr_protos, op_def=op_def)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\framework\ops.py", line 3322, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\framework\ops.py", line 1756, in __init__
+    self._traceback = tf_stack.extract_stack()

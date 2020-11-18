@@ -1,0 +1,178 @@
+Abyssal Mask：深渊面具
+Adaptive Helm：适应性头盔
+Aegis of the Legion：军团圣盾
+Aether Wisp：以太精魂
+Amplifying Tome：增幅典籍
+Archangel's Staff：大天使之杖
+Ardent Censer：炽热香炉
+Athene's Unholy Grail：雅典娜的邪恶圣杯
+B. F. Sword：暴风大剑
+Bami's Cinder：斑比的熔渣
+Banshee's Veil：女妖面纱
+Berserker's Greaves：攻速鞋
+Bilgewater Cutlass：比尔吉沃特弯刀
+Black Cleaver：黑色切割者
+Blade of the Ruined King：破败王者之剑
+Blasting Wand：爆裂魔杖
+Bloodthirster：饮血剑
+Boots of Mobility：五速鞋
+Boots of Speed：草鞋
+Boots of Swiftness：三速鞋
+Bramble Vest：荆棘背心
+Catalyst of Aeons：催化神石
+Caulfield's Warhammer：考尔菲德的战锤
+Chain Vest：锁子甲
+Chalice of Harmony：和谐圣杯
+Cloak of Agility：灵巧披风
+Cloth Armor：布甲
+Commencing Stopwatch：秒表
+Control Ward：真眼
+Corrupting Potion：腐败药水
+Crystalline Bracer：晶体护腕
+Cull：萃取
+Dagger：短剑
+Dark Seal：黑暗之戒
+Dead Man's Plate：亡者的板甲
+Death's Dance：死亡之舞
+Doran's Blade：多兰剑
+Doran's Ring：多兰戒
+Doran's Shield：多兰盾
+Duskblade of Draktharr：暮刃
+Edge of Night：夜之锋刃
+Elixir of Iron：钢铁合剂
+Elixir of Sorcery：巫术合剂
+Elixir of Wrath：愤怒合剂
+Essence Reaver：夺萃之镰
+Executioner's Calling：死刑宣告
+Faerie Charm：仙女护符
+Farsight Alteration：远程眼
+Fiendish Codex：恶魔法典
+Forbidden Idol：禁忌雕像
+Frozen Heart：冰心
+Frozen Mallet：冰锤
+Gargoyle Stoneplate：石像鬼板甲
+Giant's Belt：巨人腰带
+Glacial Shroud：冰川护甲（小冰心）
+Greater Stealth Totem：假眼
+Guardian Angel：复活甲
+Guinsoo's Rageblade：羊刀
+Haunting Guise：小面具
+Health Potion：血瓶
+Hex Core mk-1：维克托1
+Hex Core mk-2：维克托2
+Hexdrinker：小饮魔刀
+Hextech GLP-800：GLP-800
+Hextech Gunblade：科技刀
+Hextech Protobelt-01：跳枪
+Hextech Revolver：科技枪
+Hunter's Machete：打野刀
+Hunter's Talisman：猎人护符
+Iceborn Gauntlet：冰拳
+Infinity Edge：无尽之刃
+Ionian Boots of Lucidity：CD鞋
+Jaurim's Fist：石雨林之拳
+Kindlegem：燃烧宝珠
+Kircheis Shard：小电刀
+Knight's Vow：骑士之誓
+Last Whisper：最后的轻语
+Liandry's Torment：面具
+Lich Bane：巫妖之祸
+Locket of the Iron Solari：鸟盾
+Long Sword：长剑
+Lord Dominik's Regards：多米尼克领主的致意
+Lost Chapter：遗失章节
+Luden's Echo：法术电刀
+Manamune：魔宗
+Maw of Malmortius：饮魔刀
+Mejai's Soulstealer：杀人书
+Mercurial Scimitar：水银刀
+Mercury's Treads：水银鞋
+Mikael's Crucible：坩埚
+Morellonomicon：鬼书
+Mortal Reminder：凡性的提醒
+Muramana：魔切
+Nashor's Tooth：纳什之牙
+Needlessly Large Rod：无用大棒
+Negatron Cloak：负极斗篷
+Ninja Tabi：布甲鞋
+Null-Magic Mantle：抗魔斗篷
+Oblivion Orb：湮灭宝珠
+Oracle Lens：扫眼
+Perfect Hex Core：维克托3
+Phage：大锤
+Phantom Dancer：绿叉
+Pickaxe：十字镐
+Prototype Hex Core：维克托4
+Quicksilver Sash：水银
+Rabadon's Deathcap：大帽
+Randuin's Omen：兰盾
+Rapid Firecannon：火炮
+Ravenous Hydra：贪欲九头蛇
+Recurve Bow：反曲之弓
+Redemption：救赎
+Refillable Potion：补充药水
+Rejuvenation Bead：绿豆
+Righteous Glory：正义荣耀
+Relic Shield：防御辅助装
+Rod of Ages：时光杖
+Ruby Crystal：红宝石
+Runaan's Hurricane：卢安娜的飓风
+Runesteel Spaulders：升级防御辅助装
+Rylai's Crystal Scepter：冰杖
+Sanguine Blade：血色之剑
+Sapphire Crystal：蓝宝石
+Seeker's Armguard：蓝宝石护臂
+Seraph's Embrace：炽天使之拥
+Serrated Dirk：锯齿短匕
+Shard of True Ice：法术辅助装升级
+Sheen：咒刃
+Shurelya's Reverie：舒瑞雅的狂想曲
+Skirmisher's Sabre：红色打野刀
+Sorcerer's Shoes：法师鞋
+Spear of Shojin：青龙刀
+Spectral Sickle：物理攻击辅助装
+Spectre's Cowl：幽魂斗篷
+Spellbinder：缚法宝珠
+Spellthief's Edge：法师攻击辅助装
+Spirit Visage：振奋铠甲
+Stalker's Blade：蓝色打野刀
+Statikk Shiv：电刀
+Steel Shoulderguards：防御辅助装升级
+Sterak's Gage：血手
+Stinger：蜂刺
+Stopwatch：秒表
+Stormrazor：岚切
+Sunfire Cape：日炎斗篷
+Targon's Buckler：攻击辅助装升级
+Tear of the Goddess：女神泪
+Thornmail：反甲
+Tiamat：提亚马特
+Titanic Hydra：巨九
+Trinity Force：三相之力
+Twin Shadows：双生暗影
+Umbral Glaive：暗影阔剑
+Vampiric Scepter：吸血鬼节杖
+Void Staff：法穿杖
+Warden's Mail：守望者铠甲
+Warmog's Armor：狂徒铠甲
+Wit's End：智慧末刃
+Youmuu's Ghostblade：幽梦
+Zeal：狂热
+Zeke's Convergence：基克的聚合
+Zhonya's Hourglass：沙漏
+Inspiration：启迪
+Domination：主宰
+Sorcery：巫术
+Precision：精密
+Resolve：坚决
+Flash：闪现
+Teleport：传送
+Ignite：点燃
+Smite：惩戒
+Cleanse：净化
+Heal：治疗
+Exhaust：虚弱
+Barrier：屏障
+Ghost：幽灵疾步
+
+

@@ -1,0 +1,19 @@
+
+TNFSF1  Lamphottoxin_alpha      TNFb,TNFSF1B    LTA     inflammation,antiviral,secondar
+TNFSF2  Tumor_necrosis_factor_alpha     TFNa,Dif,Necrosin,TNFSF1A       immune cells rense to sepsis
+TNFSF3  Lymphotoxin beta        TNFy    LTB     inflammtion,antiviral,secondary lymphoi
+TNFSF4  OX40_ligand     CD252,Gp34,CD134L       TNFSF4  Tcells_activation,imune respons
+TNFSF5  CD40_ligand     CD154,TRAP,Gp39,T-BAM   CD40LG  adaptive_immune,antigen-present
+TNFSF6  Fas_ligand      CD178,APTL,CD95L        FASLG   Tcell,homeostasis_by_induction_
+TNFSF7  CD70    CD70    Bcells_regulation,Tcells_activation,homeostasis
+TNFSF8  CD30_ligand     CD153   TNFSF8  apoptosis_of_Tcells_and_Bcells,prevention_of_au
+TNFSF9  CD17_ligand     4-1BBL  TNFSF9
+TNFSF10 TNF-relatd_apoptosis-inducing_ligand    CD253,APO-2L    TNFSF10 Inhibiton_of_tu
+TNFSF11 Receptor_activator_of_nuclear_factor_kappa-B_ligand     CD254,OPGL,TRANCE,ODF
+TNFSF12 TNF-related_weak_inducer_of_apoptosis   APO-3L,DR3L     TNFSF12 angiognesi,apop
+TNFSF13 proliferation-inducing_ligand   CD256,TAl-2,TRDL1       TNFSF13 Bcells_developm
+TNFSF13B        Bcells_activating_factor        CD257,BLys,TALL-1,TNFSF20       TNFSF13
+TNFSF14 LIGHT   CD258,HVEML     TNFSF14 Tcell_proliferation,apoptosis
+TNFSF15 Vascular_endothelial_growth_inhibitor   TL1,TL-1A       TNFSF15 Inhibition_angi
+TNFSF18 TNF18   GITRL,AITRL,TL-6        TNFSF18 Regulation_of_Tcell
+TNFSF19 Ectodysplasin_A ED1-A1,ED1-A2   EDA     Development_of_ectodermal_tissues

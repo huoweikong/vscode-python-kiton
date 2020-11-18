@@ -1,0 +1,32 @@
+PS F:\vscode-python-kiton> & D:/ruanjian/anaconda202002/python.exe f:/vscode-python-kiton/TensorFlow-GPU/tf1p.py
+2020-05-29 00:27:38.500498: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 00:27:39.917284: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2020-05-29 00:27:39.921211: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-05-29 00:27:39.941432: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.755GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2020-05-29 00:27:39.946996: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 00:27:39.951934: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-05-29 00:27:39.957482: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-05-29 00:27:39.960111: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-05-29 00:27:39.964853: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-05-29 00:27:39.968193: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-05-29 00:27:39.975815: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-05-29 00:27:39.978504: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-05-29 00:27:40.426644: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-29 00:27:40.428585: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0
+2020-05-29 00:27:40.429717: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N
+2020-05-29 00:27:40.431232: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4604 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5)
+Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5
+2020-05-29 00:27:40.435174: I tensorflow/core/common_runtime/direct_session.cc:358] Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5
+
+add: (AddV2): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:27:40.440869: I tensorflow/core/common_runtime/placer.cc:54] add: (AddV2): /job:localhost/replica:0/task:0/device:GPU:0
+a: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:27:40.442485: I tensorflow/core/common_runtime/placer.cc:54] a: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+b: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2020-05-29 00:27:40.444050: I tensorflow/core/common_runtime/placer.cc:54] b: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+[2. 4. 6.]
+PS F:\vscode-python-kiton>

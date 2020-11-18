@@ -1,0 +1,31 @@
+下面的示例定义一个结构化数据类型 student，包含字符串字段 name，整数字段 age，及浮点字段 marks，并将这个 dtype 应用到 ndarray 对象。
+
+实例 7
+import numpy as np
+student = np.dtype([('name','S20'), ('age', 'i1'), ('marks', 'f4')]) 
+print(student)
+输出结果为：
+
+[('name', 'S20'), ('age', 'i1'), ('marks', 'f4')]
+实例 8
+import numpy as np
+student = np.dtype([('name','S20'), ('age', 'i1'), ('marks', 'f4')]) 
+a = np.array([('abc', 21, 50),('xyz', 18, 75)], dtype = student) 
+print(a)
+输出结果为：
+
+[('abc', 21, 50.0), ('xyz', 18, 75.0)]
+每个内建类型都有一个唯一定义它的字符代码，如下：
+
+字符	对应类型
+b	布尔型
+i	(有符号) 整型
+u	无符号整型 integer
+f	浮点型
+c	复数浮点型
+m	timedelta（时间间隔）
+M	datetime（日期时间）
+O	(Python) 对象
+S, a	(byte-)字符串
+U	Unicode
+V	原始数据 (void)

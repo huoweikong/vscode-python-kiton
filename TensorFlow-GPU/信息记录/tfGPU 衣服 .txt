@@ -1,0 +1,168 @@
+#!/usr/bin/env python
+# -*- encoding: utf-8 -*-
+'''
+@File         :   pt2.py
+@Time         :   2020/05/21 23:58:57
+@Author       :   艾强云
+@Contact      :   aqy0716@163.com
+@Department   :   SCAU 
+@Desc         :   None
+'''
+#机器学习神经网络
+# here put the import lib
+import tensorflow as tf 
+from tensorflow import keras
+
+import numpy as np 
+import pandas as pd 
+import matplotlib.pyplot as plt
+mnist = keras.datasets.fashion_mnist
+(X_train, y_train),(X_test,y_test) = mnist.load_data()
+
+print("训练数据形状，" , X_train.shape)
+print("数据最大值 " , np.max(X_train))
+print("查看标签数值 " , y_train)
+
+class_names =['top','trouser','pullover','dress','coat','sandal','shirt','sneaker','bag','ankle boot']#定义10个类别的名称
+
+plt.figure()#可视化
+plt.imshow(X_train[1])#【】里面的数据可以自己输入随便一个画出第几个的图
+plt.colorbar()#加一个颜色条
+plt.show()
+
+#将数据集归一化 即降低数据集的值
+X_train = X_train/255.0
+X_test = X_test/255.0
+plt.figure()#可视化
+plt.imshow(X_train[1])#【】里面的数据可以自己输入随便一个画出第几个的图
+plt.colorbar()#加一个颜色条
+plt.show()
+
+#可以看出值被缩放到0到1之间
+from tensorflow.python.keras.models import Sequential #导入训练模型
+from tensorflow.python.keras.layers import Flatten,Dense#导入神经网络的第一层和第二层
+
+
+model = Sequential()
+model.add(Flatten(input_shape = (28,28)))#此行代码是将图的大小数据转换成一维的数据
+model.add(Dense(128,activation = 'relu'))#定义第一层神经网络有128个单元，并且选择的激活函数是ReLu函数，也可以是其他函数性sigmoid函数
+# 这里要是不懂可以查看吴恩达老师深度学习的3.6节课
+model.add(Dense(10,activation = 'softmax'))#定义输出层，有10类所以输出10，激活函数是max函数
+
+print("查看自己写的代码的总体参数 " , model.summary())#查看自己写的代码的总体参数
+
+
+#模型补充
+model.compile(optimizer='adam',loss='sparse_categorical_crossentropy',metrics=['accuracy'])#定义损失函数
+
+#使用的优化器名叫AdamOptimizer，使用的损失函数是稀疏分类交叉熵
+model.fit(X_train,y_train,epochs = 10)#进行训练，epochs是显示运行多少次
+
+test_loss, test_acc = model.evaluate(X_test,y_test)#利用测试集测试训练下的模型的准确度
+print(test_acc)
+
+#预测模型精确度
+from sklearn.metrics import accuracy_score
+y_pred = model.predict_classes(X_test)
+
+print(accuracy_score(y_test, y_pred))
+
+print(tf.test.is_gpu_available())
+
+------------------------------------------------------------------------------------------------------------------------
+****************************************************************************************************************************
+-------------------------------------------------------------------------------------------------------------------------------
+
+PS F:\vscode-python-kiton> & D:/ruanjian/anaconda202002/python.exe f:/vscode-python-kiton/数学/TensorFlow/pt2.py
+2020-05-29 00:33:44.308803: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+训练数据形状， (60000, 28, 28)
+数据最大值  255
+查看标签数值  [9 0 0 ... 3 0 5]
+2020-05-29 00:33:50.532487: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-05-29 00:33:50.557648: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.755GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2020-05-29 00:33:50.561284: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 00:33:50.568473: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-05-29 00:33:50.573147: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-05-29 00:33:50.575965: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-05-29 00:33:50.581990: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-05-29 00:33:50.585757: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-05-29 00:33:50.593746: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-05-29 00:33:50.596544: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-05-29 00:33:50.598143: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2020-05-29 00:33:50.601011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.755GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2020-05-29 00:33:50.605562: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 00:33:50.608013: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-05-29 00:33:50.609933: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-05-29 00:33:50.612253: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-05-29 00:33:50.614185: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-05-29 00:33:50.616119: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-05-29 00:33:50.617990: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-05-29 00:33:50.619995: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-05-29 00:33:51.071264: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-29 00:33:51.073211: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0
+2020-05-29 00:33:51.074427: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N
+2020-05-29 00:33:51.075876: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4604 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5)
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+flatten (Flatten)            (None, 784)               0
+_________________________________________________________________
+dense (Dense)                (None, 128)               100480
+_________________________________________________________________
+dense_1 (Dense)              (None, 10)                1290
+=================================================================
+Total params: 101,770
+Trainable params: 101,770
+Non-trainable params: 0
+_________________________________________________________________
+查看自己写的代码的总体参数  None
+Train on 60000 samples
+Epoch 1/10
+2020-05-29 00:33:51.467932: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+60000/60000 [==============================] - 2s 41us/sample - loss: 0.5001 - accuracy: 0.8269
+Epoch 2/10
+60000/60000 [==============================] - 2s 33us/sample - loss: 0.3769 - accuracy: 0.8647
+Epoch 3/10
+60000/60000 [==============================] - 2s 34us/sample - loss: 0.3376 - accuracy: 0.8768
+Epoch 4/10
+60000/60000 [==============================] - 2s 34us/sample - loss: 0.3126 - accuracy: 0.8848
+Epoch 5/10
+60000/60000 [==============================] - 2s 33us/sample - loss: 0.2953 - accuracy: 0.8902
+Epoch 6/10
+60000/60000 [==============================] - 2s 33us/sample - loss: 0.2818 - accuracy: 0.8956
+Epoch 7/10
+60000/60000 [==============================] - 2s 33us/sample - loss: 0.2693 - accuracy: 0.9008
+Epoch 8/10
+60000/60000 [==============================] - 2s 33us/sample - loss: 0.2591 - accuracy: 0.9031
+Epoch 9/10
+60000/60000 [==============================] - 2s 33us/sample - loss: 0.2496 - accuracy: 0.9071
+Epoch 10/10
+60000/60000 [==============================] - 2s 33us/sample - loss: 0.2408 - accuracy: 0.9107
+10000/10000 [==============================] - 0s 33us/sample - loss: 0.3349 - accuracy: 0.8823
+0.8823
+0.8823
+WARNING:tensorflow:From f:/vscode-python-kiton/数学/TensorFlow/pt2.py:70: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+2020-05-29 00:34:12.313519: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.755GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2020-05-29 00:34:12.318078: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 00:34:12.319828: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-05-29 00:34:12.322225: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-05-29 00:34:12.324215: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-05-29 00:34:12.325950: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-05-29 00:34:12.327717: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-05-29 00:34:12.329492: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-05-29 00:34:12.332276: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-05-29 00:34:12.333684: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-29 00:34:12.335506: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0
+2020-05-29 00:34:12.336623: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N
+2020-05-29 00:34:12.337972: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/device:GPU:0 with 4604 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5)
+True
+PS F:\vscode-python-kiton>

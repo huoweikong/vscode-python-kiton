@@ -1,0 +1,48 @@
+PS F:\vscode-python-kiton> & D:/ruanjian/anaconda202002/python.exe f:/vscode-python-kiton/สýัง/TensorFlow/pt1.py
+2020-05-29 00:31:27.989004: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+WARNING:tensorflow:From C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\ops\resource_variable_ops.py:1635: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\tensorflow_core\python\util\tf_should_use.py:235: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+2020-05-29 00:31:29.499245: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-05-29 00:31:29.521270: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.755GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2020-05-29 00:31:29.526262: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 00:31:29.531540: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-05-29 00:31:29.536448: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-05-29 00:31:29.539280: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-05-29 00:31:29.544175: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-05-29 00:31:29.548527: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-05-29 00:31:29.556337: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-05-29 00:31:29.559300: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-05-29 00:31:29.560833: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2020-05-29 00:31:29.564030: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.755GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2020-05-29 00:31:29.567730: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-05-29 00:31:29.569467: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-05-29 00:31:29.572258: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-05-29 00:31:29.573981: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-05-29 00:31:29.576214: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-05-29 00:31:29.578317: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-05-29 00:31:29.580315: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-05-29 00:31:29.582712: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-05-29 00:31:30.033318: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-05-29 00:31:30.035269: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0
+2020-05-29 00:31:30.036587: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N
+2020-05-29 00:31:30.038076: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4604 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5)
+0 [0.09787905] [0.42209107]
+20 [0.08481357] [0.3083097]
+40 [0.09565217] [0.30237904]
+60 [0.09875525] [0.3006811]
+80 [0.09964363] [0.300195]
+100 [0.09989797] [0.30005583]
+120 [0.0999708] [0.300016]
+140 [0.09999163] [0.3000046]
+160 [0.0999976] [0.30000132]
+180 [0.09999933] [0.3000004]
+200 [0.0999998] [0.30000013]
+PS F:\vscode-python-kiton>
