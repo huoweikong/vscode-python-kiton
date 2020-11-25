@@ -9,9 +9,6 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-import sys
-
-from PyQt5.QtWidgets import QApplication, QDialog, QMainWindow
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -311,7 +308,7 @@ class Ui_MainWindow(object):
         self.label_15.setFont(font)
         self.label_15.setObjectName("label_15")
         self.lineEdit_22 = QtWidgets.QLineEdit(self.groupBox_2)
-        self.lineEdit_22.setGeometry(QtCore.QRect(530, 170, 81, 31))
+        self.lineEdit_22.setGeometry(QtCore.QRect(520, 170, 111, 31))
         font = QtGui.QFont()
         font.setFamily("等线")
         font.setPointSize(14)
@@ -319,7 +316,7 @@ class Ui_MainWindow(object):
         self.lineEdit_22.setAlignment(QtCore.Qt.AlignCenter)
         self.lineEdit_22.setObjectName("lineEdit_22")
         self.label_22 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_22.setGeometry(QtCore.QRect(620, 180, 21, 21))
+        self.label_22.setGeometry(QtCore.QRect(640, 180, 21, 21))
         font = QtGui.QFont()
         font.setFamily("等线")
         font.setPointSize(14)
@@ -333,7 +330,7 @@ class Ui_MainWindow(object):
         self.label_23.setFont(font)
         self.label_23.setObjectName("label_23")
         self.pushButton_3 = QtWidgets.QPushButton(self.groupBox_2)
-        self.pushButton_3.setGeometry(QtCore.QRect(690, 180, 111, 51))
+        self.pushButton_3.setGeometry(QtCore.QRect(710, 190, 111, 51))
         font = QtGui.QFont()
         font.setFamily("等线")
         font.setPointSize(14)
@@ -416,7 +413,7 @@ class Ui_MainWindow(object):
         self.pushButton_5.setObjectName("pushButton_5")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1122, 24))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1122, 23))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -442,6 +439,7 @@ class Ui_MainWindow(object):
         self.pushButton_3.clicked.connect(self.lineEdit_22.show)
         self.pushButton_3.clicked.connect(self.lineEdit_16.show)
         self.pushButton_3.clicked.connect(self.lineEdit_13.show)
+        self.pushButton_2.clicked.connect(self.lineEdit_11.clear)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -494,23 +492,3 @@ class Ui_MainWindow(object):
         self.label_28.setText(_translate("MainWindow", "(六孔板一般为：2x10^6个细胞)"))
         self.pushButton_6.setText(_translate("MainWindow", "填充"))
         self.pushButton_5.setText(_translate("MainWindow", "退出"))
-
-class QmyDialog(QMainWindow):
-    def __init__(self, parent=None):
-        super().__init__(parent)  # 调用父类构造函数，创建窗体
-        self.ui = Ui_MainWindow()  # 创建UI对象
-        self.ui.setupUi(self)  # 构造UI界面
-
-    def on_pushButton_clicked(self):
-        a1 = self.LineEdit.text()
-        print(a1)
-
-if __name__ == "__main__":  # 用于当前窗体测试
-    app = QApplication(sys.argv)  # 创建GUI应用程序
-
-    form = QmyDialog()  # 创建窗体
-
-
-    form.show()
-
-    sys.exit(app.exec_())
