@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1122</width>
-    <height>787</height>
+    <width>1121</width>
+    <height>844</height>
    </rect>
   </property>
   <property name="font">
@@ -24,7 +24,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>20</y>
+      <y>10</y>
       <width>1041</width>
       <height>411</height>
      </rect>
@@ -556,10 +556,10 @@
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
-       <x>730</x>
-       <y>310</y>
-       <width>131</width>
-       <height>71</height>
+       <x>720</x>
+       <y>300</y>
+       <width>141</width>
+       <height>81</height>
       </rect>
      </property>
      <property name="font">
@@ -638,8 +638,8 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>450</y>
-      <width>891</width>
+      <y>430</y>
+      <width>911</width>
       <height>281</height>
      </rect>
     </property>
@@ -930,10 +930,10 @@
     <widget class="QPushButton" name="pushButton_3">
      <property name="geometry">
       <rect>
-       <x>710</x>
-       <y>190</y>
-       <width>111</width>
-       <height>51</height>
+       <x>730</x>
+       <y>170</y>
+       <width>141</width>
+       <height>71</height>
       </rect>
      </property>
      <property name="font">
@@ -1120,10 +1120,10 @@
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
-      <x>950</x>
-      <y>590</y>
-      <width>91</width>
-      <height>51</height>
+      <x>1000</x>
+      <y>530</y>
+      <width>81</width>
+      <height>141</height>
      </rect>
     </property>
     <property name="font">
@@ -1138,13 +1138,61 @@
      <string>退出</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>760</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>760</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Copyright © 2020 SCAU</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>769</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>版本号：4.0.1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1122</width>
+     <width>1121</width>
      <height>23</height>
     </rect>
    </property>
@@ -1165,7 +1213,7 @@
     </hint>
     <hint type="destinationlabel">
      <x>449</x>
-     <y>510</y>
+     <y>503</y>
     </hint>
    </hints>
   </connection>
@@ -1177,11 +1225,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>761</x>
-     <y>547</y>
+     <y>543</y>
     </hint>
     <hint type="destinationlabel">
      <x>271</x>
-     <y>667</y>
+     <y>653</y>
     </hint>
    </hints>
   </connection>
@@ -1197,7 +1245,7 @@
     </hint>
     <hint type="destinationlabel">
      <x>617</x>
-     <y>672</y>
+     <y>653</y>
     </hint>
    </hints>
   </connection>
@@ -1213,7 +1261,7 @@
     </hint>
     <hint type="destinationlabel">
      <x>347</x>
-     <y>705</y>
+     <y>703</y>
     </hint>
    </hints>
   </connection>
@@ -1228,8 +1276,8 @@
      <y>223</y>
     </hint>
     <hint type="destinationlabel">
-     <x>162</x>
-     <y>177</y>
+     <x>163</x>
+     <y>167</y>
     </hint>
    </hints>
   </connection>
@@ -1352,12 +1400,12 @@
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>999</x>
-     <y>641</y>
+     <x>1029</x>
+     <y>603</y>
     </hint>
     <hint type="destinationlabel">
      <x>1007</x>
-     <y>-15</y>
+     <y>0</y>
     </hint>
    </hints>
   </connection>
@@ -1369,11 +1417,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>562</x>
-     <y>530</y>
+     <y>513</y>
     </hint>
     <hint type="destinationlabel">
      <x>405</x>
-     <y>510</y>
+     <y>503</y>
     </hint>
    </hints>
   </connection>
@@ -1401,11 +1449,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>822</x>
-     <y>694</y>
+     <y>693</y>
     </hint>
     <hint type="destinationlabel">
      <x>620</x>
-     <y>659</y>
+     <y>653</y>
     </hint>
    </hints>
   </connection>
@@ -1421,7 +1469,7 @@
     </hint>
     <hint type="destinationlabel">
      <x>342</x>
-     <y>720</y>
+     <y>703</y>
     </hint>
    </hints>
   </connection>
@@ -1437,7 +1485,7 @@
     </hint>
     <hint type="destinationlabel">
      <x>261</x>
-     <y>656</y>
+     <y>653</y>
     </hint>
    </hints>
   </connection>

@@ -99,8 +99,10 @@ for i, i2 in zip(reversed(a_ratio), range(8)):
 # 寻找小于50%且最近于50%的稀释度 占率
 for i in a_ratio:
     if round(float(i)) < 0.5:
+        d50z = float(i)
         d50 = i
         break
+print("\n  低于50%的稀释度为：{}    其比率为：{} ".format(d50z, d50))
 # 计算距离
 s = (float(gd50z) - 0.5) / (float(gd50z) - float(d50))
 print("\n  高于50%的稀释度为：{}    其比率为：{} ".format(gd50, gd50z))
